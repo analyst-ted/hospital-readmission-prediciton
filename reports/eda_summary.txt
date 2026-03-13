@@ -1,0 +1,28 @@
+
+EDA KEY FINDINGS
+=================
+1. CLASS IMBALANCE
+   - 88.8% not readmitted vs 11.2% readmitted
+   - Requires SMOTE during preprocessing
+
+2. STRONGEST PREDICTOR
+   - number_inpatient (0.17 correlation)
+   - Prior hospitalizations = chronic/complex patients
+
+3. AGE INSIGHT
+   - [80-90) age group: 12.1% rate with 17,197 patients
+   - Elderly patients are highest reliable risk group
+
+4. INSULIN INSIGHT
+   - Adjusted insulin (Up/Down) = 13-14% readmission rate
+   - vs No insulin = 10.1% rate
+   - Unstable diabetes = higher readmission risk
+
+5. MULTICOLLINEARITY
+   - time_in_hospital & num_medications (0.47)
+   - time_in_hospital & num_lab_procedures (0.32)
+   - num_medications & num_procedures (0.39)
+
+6. FEATURE ENGINEERING PLANNED
+   - service_utilization score
+   - medication_procedure complexity score
